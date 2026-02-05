@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.logistics.mapper.OrderMapper">
+
+    <select id="selectAll" resultType="com.logistics.entity.Order">
+        SELECT
+            id,
+            order_no AS orderNo,
+            customer_name AS customerName,
+            order_status AS orderStatus,
+            origin,
+            destination,
+            create_time AS createTime,
+            delivery_time AS deliveryTime
+        FROM order_info
+        ORDER BY create_time DESC
+    </select>
+
+    <select id="countByStatus" resultType="map">
+        SELECT
+            order_status AS order_status,
+            COUNT(*) AS count
+        FROM order_info
+        GROUP BY order_status
+    </select>
+
+</mapper>
