@@ -1,0 +1,14 @@
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\controller\DashboardController.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\LogisticsApplication.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\mapper\OrderMapper.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\controller\OrderController.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\mapper\TransportMapper.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\service\WarehouseService.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\controller\TransportController.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\entity\TransportTask.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\entity\WarehouseStock.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\mapper\WarehouseMapper.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\controller\WarehouseController.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\service\OrderService.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\service\TransportService.java
+E:\Vscode-bishe\logistics-visualization-system\backend\src\main\java\com\logistics\entity\Order.java

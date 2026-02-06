@@ -1,0 +1,14 @@
+com\logistics\entity\TransportTask.class
+com\logistics\service\OrderService.class
+com\logistics\mapper\WarehouseMapper.class
+com\logistics\entity\WarehouseStock.class
+com\logistics\entity\Order.class
+com\logistics\controller\TransportController.class
+com\logistics\controller\OrderController.class
+com\logistics\mapper\OrderMapper.class
+com\logistics\LogisticsApplication.class
+com\logistics\service\WarehouseService.class
+com\logistics\controller\WarehouseController.class
+com\logistics\service\TransportService.class
+com\logistics\mapper\TransportMapper.class
+com\logistics\controller\DashboardController.class

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.logistics.mapper.WarehouseMapper">
+
+    <select id="selectAll" resultType="com.logistics.entity.WarehouseStock">
+        SELECT
+            id,
+            warehouse_name AS warehouseName,
+            product_name AS productName,
+            stock_quantity AS stockQuantity,
+            warning_threshold AS warningThreshold,
+            update_time AS updateTime
+        FROM warehouse_stock
+    </select>
+
+</mapper>

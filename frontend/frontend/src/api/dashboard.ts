@@ -7,7 +7,7 @@ import axios from 'axios'
  * 统一配置后端地址
  */
 const request = axios.create({
-  baseURL: 'http://localhost:8000', // FastAPI 后端
+  baseURL: 'http://localhost:8080', // FastAPI 后端
   timeout: 5000
 })
 
