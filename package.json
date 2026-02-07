@@ -1,5 +1,14 @@
 {
-  "devDependencies": {
-    "@types/node": "^25.2.0"
-  }
+  "name": "logistics-visualization-system",
+  "version": "1.0.0",
+  "description": "物流可视化系统根依赖配置",
+  "main": "index.js",
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:run": "cd backend && mvn spring-boot:run"
+  },
+  "keywords": ["logistics", "visualization", "vue3", "springboot"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
 }

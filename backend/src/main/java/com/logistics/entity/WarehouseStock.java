@@ -1,31 +1,35 @@
 package com.logistics.entity;
 
-import java.time.LocalDateTime;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
+/**
+ * 仓库库存实体（对应数据库warehouse_stock表）
+ */
+@Data
+@TableName("warehouse_stock")
 public class WarehouseStock {
-
+    /** 主键ID */
+    @TableId(type = IdType.AUTO)
     private Long id;
+    
+    /** 仓库名称 */
     private String warehouseName;
-    private String productName;
-    private Integer stockQuantity;
-    private Integer warningThreshold;
-    private LocalDateTime updateTime;
-
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-
-    public String getWarehouseName() { return warehouseName; }
-    public void setWarehouseName(String warehouseName) { this.warehouseName = warehouseName; }
-
-    public String getProductName() { return productName; }
-    public void setProductName(String productName) { this.productName = productName; }
-
-    public Integer getStockQuantity() { return stockQuantity; }
-    public void setStockQuantity(Integer stockQuantity) { this.stockQuantity = stockQuantity; }
-
-    public Integer getWarningThreshold() { return warningThreshold; }
-    public void setWarningThreshold(Integer warningThreshold) { this.warningThreshold = warningThreshold; }
-
-    public LocalDateTime getUpdateTime() { return updateTime; }
-    public void setUpdateTime(LocalDateTime updateTime) { this.updateTime = updateTime; }
+    
+    /** 商品名称 */
+    private String goodsName;
+    
+    /** 商品编码 */
+    private String goodsCode;
+    
+    /** 库存数量 */
+    private Integer stockNum;
+    
+    /** 库存预警值 */
+    private Integer warnNum;
+    
+    /** 最后更新时间 */
+    private String updateTime;
 }

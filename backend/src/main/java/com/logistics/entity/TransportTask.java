@@ -1,35 +1,42 @@
 package com.logistics.entity;
 
-import java.time.LocalDateTime;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import java.util.Date;
 
+/**
+ * 运输任务实体（对应数据库transport_task表）
+ */
+@Data
+@TableName("transport_task")
 public class TransportTask {
-
+    /** 主键ID */
+    @TableId(type = IdType.AUTO)
     private Long id;
-    private Long orderId;
-    private String vehicleNo;
-    private String driverName;
-    private String transportStatus;
-    private LocalDateTime startTime;
-    private LocalDateTime endTime;
-
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-
-    public Long getOrderId() { return orderId; }
-    public void setOrderId(Long orderId) { this.orderId = orderId; }
-
-    public String getVehicleNo() { return vehicleNo; }
-    public void setVehicleNo(String vehicleNo) { this.vehicleNo = vehicleNo; }
-
-    public String getDriverName() { return driverName; }
-    public void setDriverName(String driverName) { this.driverName = driverName; }
-
-    public String getTransportStatus() { return transportStatus; }
-    public void setTransportStatus(String transportStatus) { this.transportStatus = transportStatus; }
-
-    public LocalDateTime getStartTime() { return startTime; }
-    public void setStartTime(LocalDateTime startTime) { this.startTime = startTime; }
-
-    public LocalDateTime getEndTime() { return endTime; }
-    public void setEndTime(LocalDateTime endTime) { this.endTime = endTime; }
+    
+    /** 关联订单编号 */
+    private String orderNo;
+    
+    /** 运输方式：0-快递 1-物流 2-空运 */
+    private Integer transportType;
+    
+    /** 运输单号 */
+    private String transportNo;
+    
+    /** 出发地 */
+    private String startAddress;
+    
+    /** 目的地 */
+    private String endAddress;
+    
+    /** 运输状态：0-未开始 1-运输中 2-已完成 */
+    private Integer status;
+    
+    /** 创建时间 */
+    private Date createTime;
+    
+    /** 预计到达时间 */
+    private Date expectArriveTime;
 }
